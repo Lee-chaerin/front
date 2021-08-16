@@ -15,7 +15,7 @@
       <nav class="navbar">
         <!--로고-->
         <div class="navbar_logo">
-          <a href="">USAN</a>`
+          <a href="">USAN</a>
         </div>
         <!--메뉴(상단바)-->
         <ul class="navbar_menu">
@@ -56,65 +56,44 @@
 
     <main class="contents">
       <!--우산대여 소개-->
-      <section id="intdu">
-        <h1>우산대여</h1>
-        <h3>우산을 쉽고 빠르게 대여하세요!</h3>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        ㅍ
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        ㅍ
-        <p>안녕</p>
-        <p>안녕</p>
-        ㅍ
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        ㅍ
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-
-        ㅍ
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p>
-        <p>안녕</p><p>안녕</p>
-        
-      </section>
-      
-
-
+      <div id="introdu">
+        <div class="introdu_text">
+          <h1>우산대여</h1>
+          <h3>우산을 쉽고 빠르게 대여하세요!</h3>
+          <p>매일 들고 다니기 귀찮았던 우산</p>
+          <p>이제는 대여로 손을 가볍게!</p>
+        </div>
+        <div class="loginBtn">
+          <button>로그인</button>
+        </div>
+      </div>
+      <!--대여하기, 대여방법, 반납방법-->
+      <div id="main_menu">
+        <div class="rent">
+          <h3>대여하시겠습니까?</h2>
+          <p>대여시간 기준으로 24시간 이후 1500원 부과</p>
+          <button class="rentBtn">대여하기</button>
+        </div>
+        <div id="rent_way">
+          <h3>이것은 대여방법</h2>
+            <ol>
+              <li>QR코드를 인식하세요.</li>
+              <li>로그인 후 대여하기 버튼을 눌러주세요.</li>
+              <li>안내에 따라 대여를 진행해주세요.</li>
+              <li>대여완료 후 우산을 레일 방향에 따라 꺼내주세요.</li>
+            </ol>
+        </div>
+        <div id="return_way">
+          <h3>이것은 반납방법</h2>
+            <ol>
+              <li>QR코드를 인식하세요.</li>
+              <li>로그인 후 반납하기 버튼을 눌러주세요.</li>
+              <li>우산을 넣고 결제하기를 눌러주세요.</li>
+              <li>안내에 따라 반납을 진행해주세요.</li>
+            </ol>
+        </div>
+      </div>
+      <!--근처 우산존 찾기-->
 
     </main>
     
@@ -124,16 +103,7 @@
 
 
     <!--자바스크립트-->
-    <script>
-      const menu_icon = document.querySelector('.navbar_menu_icon');
-      const menu = document.querySelector('.navbar_menu');
-      const log = document.querySelector('.navbar_log');
-
-      menu_icon.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        log.classList.toggle('active');
-      })
-    </script>
+    <script src="메인화면 헤더.js"></script>
 
   </body>
 </html>
